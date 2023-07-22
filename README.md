@@ -3,22 +3,17 @@
 </p>
 
 <h1>osTicket - Post-Install Configuration</h1>
-This tutorial outlines the post-install configuration of the open-source help desk ticketing system osTicket.<br />
+This project outlines how to configure osTicket, an open-source help desk ticketing system. This process involves creating user and employee accounts, teams, departments, SLAs, permissions, and help topics.<br />
 
+<h2>Technologies Used</h2>
 
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How To Configure osTicket, post-installation](https://www.youtube.com)
-
-<h2>Environments and Technologies Used</h2>
-
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
+- VMWare Workstation (Virtual Machine)
+- osTicket (Help Desk Ticketing Software)
 - Internet Information Services (IIS)
 
-<h2>Operating Systems Used </h2>
+<h2>Operating System Used </h2>
 
-- Windows 10</b> (21H2)
+- Windows 10 Pro</b> 
 
 <h2>Post-Install Configuration Objectives</h2>
 
