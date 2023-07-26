@@ -15,13 +15,15 @@ This project outlines how to configure osTicket, an open-source help desk ticket
 
 - Windows 10 Pro</b> 
 
-<h2>Post-Install Configuration Objectives</h2>
+<h2>List of Configuration Parameters</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- Roles
+-  Departments 
+-  Teams
+-  Agents
+-  Service Level Agreements (SLAs)
+-  Help Topics
+-  Users
 
 <h2>Configuration Steps</h2>
 
@@ -29,9 +31,7 @@ This project outlines how to configure osTicket, an open-source help desk ticket
 <img src="https://i.imgur.com/rvxas5u.jpg" height="80%" width="80%"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+In preparation of this lab, I installed osTicket on a Windows 10 virtual machine in VMWare Workstation. The installation process involved enabling/configuring Internet Information Services (IIS), setting up a MySQL database, and downloading many third-party programs. The picture above shows the default screen that opens when you login to osTicket's "admin" panel. In this lab, the majority of the configuration will take place in the admin panel.</p><br />
 
 <p>
 <img src="https://i.imgur.com/B2P6dHB.jpg" height="60%" width="60%"/>
@@ -42,7 +42,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </p>
 
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+STEP 1: ROLES
+
+Roles are the permissions granted to Agents (help desk employees) in a particular Department. Checking and unchecking different boxes determines how much administrative access an agent has while working with a ticket. In this example, I created a new role called "Level 1 Access". This role is designed for Tier 1 help desk agents and therefore has limited privileges. 
 </p>
 <br />
 
@@ -55,7 +57,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </p>
 
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+STEP 2: DEPARTMENTS
+
+Creating Departments allows an organization to separate employees into logical groups. This makes it easy to route a ticket to every member of the support department, every member of the maintenance department, etc. I decided to create a new Department to hold all of the System Administrators.   
 </p>
 <br />
 
@@ -68,7 +72,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </p>
 
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+STEP 3: TEAMS
+
+Teams allow you to pull Agents from different Departments and group them together in order to handle a specific issue. For example, you could create a team called "Level II Support" and add one experienced Agent from each Department to the team.
 </p>
 <br />
 
@@ -85,7 +91,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </p>
 
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+STEP 4: AGENTS
+
+Agents are employees responsible for resolving and responding to tickets. Agents can be assigned to a Department and given Roles within that Department. For this project, I created 2 Agents: Jane Doe (a System Administrator), and John Doe (a Level I Support Technician).
 </p>
 <br />
 
@@ -98,7 +106,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </p>
 
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+STEP 5: SERVICE LEVEL AGREEMENTS (SLAs)
+
+Service Level Agreements are used to provide a length of time in which the help desk Administrator expects tickets to be closed. If a ticket were assigned a "SEV-1" (severity 1) SLA in the example above, that ticket would be expected to be closed within 4 hours regardless of the day or time (24/7). If the ticket isn't closed within 4 hours, it will be listed as overdue.
 </p>
 <br />
 
@@ -111,7 +121,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </p>
 
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+STEP 6: HELP TOPICS
+
+Help Topics help to streamline the process of creating tickets for end-users. If a User needed to have their password reset, they could simply select the Password Reset Help Topic and their ticket would be routed to the appropriate Department.
 </p>
 <br />
 
@@ -124,6 +136,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </p>
 
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+STEP 7: USERS
+
+Users are the people creating tickets in order to receive assistance from the help desk. When a ticket is created in the help desk, the user is associated with their email address in the User Directory of the help desk. For this lab, I created 2 Users, Sarah Smith and Jeff Jones.
+
+In the next lab, I'll be using these User accounts to create tickets, and then I'll walk through the process of resolving and closing tickets as an Agent using all of the configuration settings created in this lab!
 </p>
 <br />
