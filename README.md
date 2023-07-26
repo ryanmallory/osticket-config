@@ -15,7 +15,7 @@ This project outlines how to configure osTicket, an open-source help desk ticket
 
 - Windows 10 Pro</b> 
 
-<h2>List of Configuration Parameters</h2>
+<h2>List of Configuration Categories</h2>
 
 - Roles
 -  Departments 
