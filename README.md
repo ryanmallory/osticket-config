@@ -31,7 +31,7 @@ This project outlines how to configure osTicket, an open-source help desk ticket
 <img src="https://i.imgur.com/rvxas5u.jpg" height="80%" width="80%"/>
 </p>
 <p>
-In preparation of this lab, I installed osTicket on a Windows 10 virtual machine in VMWare Workstation. The installation process involved enabling/configuring Internet Information Services (IIS), setting up a MySQL database, and downloading many third-party programs. The picture above shows the default screen that opens when you login to osTicket's "admin" panel. In this lab, the majority of the configuration will take place in the admin panel.</p><br />
+In preparation of this lab, I installed osTicket on a Windows 10 virtual machine in VMWare Workstation. The installation process involved enabling/configuring Internet Information Services (IIS), setting up a MySQL database, and downloading several third-party programs. The picture above shows the default screen that opens when you login to osTicket's "admin" panel. In this lab, the majority of the configuration will take place in the admin panel.</p><br />
 
 <p>
 <img src="https://i.imgur.com/B2P6dHB.jpg" height="60%" width="60%"/>
